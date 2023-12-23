@@ -11,10 +11,12 @@ html {
   /* font-size: 62.5%; */
 }
 
-body{
-  width: 1600px;
-  margin: auto;
+
+.container {
+  max-width: 800px; /* コンテナの最大幅 */
+  margin: 0 auto; /* 上下のマージンを0、左右のマージンを自動に設定して中央寄せ */
 }
+
 
 .btn,
 a.btn,
@@ -247,4 +249,17 @@ p {
   font-size: 70px;
   font-weight: bold; 
   color:#000;
+}
+/* レスポンシブ対応 */
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 100%; /* スクリーンサイズが600px以下の場合、幅を100%にする */
+  }
+
+  .column-text {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold; 
+    color:#000;
+  }
 }
